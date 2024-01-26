@@ -1,5 +1,8 @@
 // API
 const API_ENDPOINT = 'https://yesno.wtf/api';
+/*Retroalimentación:
+La desarrolladora se mostro segura de si misma, mantuvo su camara prendida y relató el desarrollo del codigo. 
+*/
 
 /**
  * STEPS:
@@ -11,3 +14,14 @@ const API_ENDPOINT = 'https://yesno.wtf/api';
  * 5. Optional: add loading/error states
  *
  */
+
+//Retroalimentación: 
+/* 
+ */
+
+fetch(API_ENDPOINT)
+    .then(response => response.json())
+    .then(json => {
+        console.log(json)
+    })
+    .catch(error => console.error('Ups', error));
